@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+<link rel="stylesheet" href="style.css">
+</head>
+ 
+<body>
+    <div>
+        <h1>JavaScript with HTML!</h1>
+        <h3>Click on the button to see image</h3>
+ 
+        <!-- Add id to image -->
+ 
+        <img id="make_up_any_id" src="aboutmepic.jpg"
+            alt="GFG image" />
+    </div>
+ 
+    <button type="button"
+        onclick="show()" id="picture">
+        Show Image
+    </button>
+ 
+    <script>
+        function show() {
+ 
+            /* Access image by id and change
+            the display property to block*/
+            document.getElementById('image')
+                    .style.display = "block";
+ 
+            document.getElementById('btnID')
+                    .style.display = "none";
+        }
+    </script>
+</body>
+</html>
